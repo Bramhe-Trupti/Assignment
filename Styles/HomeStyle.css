@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.logo{
+    font-size: 40px;
+}
+ul{
+    list-style: none;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    margin-left:500px;
+}
+.nav-links li{
+    margin: 0px 30px;
+    font-size: 20px;
+}
+.nav-links li> a:visited{
+    color: whitesmoke;
+}
+.nav-links li> a:active{
+    color: rgb(207, 62, 135);
+}
+.nav-links li> a:hover{
+    color: rgb(207, 62, 135);
+}
+.nav-links li ul{
+    display: none;
+    height:auto;
+    padding:0;
+    margin: 0;
+}
+.nav-links li:hover div{
+    display: block;
+    position: absolute;
+    background-color:transparent;
+}
+.nav-links li:hover ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.nav-links li Ul li{
+    flex-direction: column;
+    background-color: transparent;
+    margin:5px auto;
+}
+.nav-links li div ul li a:hover{
+    background-color: pink;
+}
+header{
+    width: 100vw;
+    height:50vw;
+    background: url("assets/Himalayas-Kanchenjunga.jpg");
+    background-position: bottom;
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background:  rgb(207, 62, 135);
+    margin: 5px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.btn{
+    padding: 8px 15px;
+    background:  rgb(207, 62, 135);
+    border: 30px;
+    color:whitesmoke;
+
+}
+
+/*@media screen and (max-width:600px){
+    .navbar{
+        bacgroud-color:Pink;
+    }
+}*/
+    

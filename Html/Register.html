@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="E:\Practice\LoginPage\Styles\RegisterUser.css">
+</head>
+<body>
+    <div class="Register">
+        <form name="RegForm" class="RegForms">
+            <h2>Register User</h2>
+            <div class="Name">
+                <input type="text" id="Name" placeholder="UserName" required>
+                <small id="errorName"></small>
+            </div>
+            <div class="Email">
+                <input type="email" id="Email" placeholder="abc@gmail.com" onchange="validateEmali()" multiple required>
+                <small id="errorEmail"></small>
+            </div>
+            <div class="Password">
+                <input type="password" id="Password" placeholder="Password" onchange="CheckPW()" required>
+                <small id="errorPw"></small>
+            </div>
+            <div class="ConPw">
+                <input type="password" name="ConPassword" id="ConPW" placeholder="Confirm Password" onchange="VerifyPw()" required >
+                <small id="errorConPw"></small>
+            </div>
+            
+            <input type="submit" name="Submit" id="SubmitBtn" onclick="Save()">
+            <div class="Login">Already have an account?<a href="index.html"> Sign In</a></div>
+        </form>
+    </div>
+    <script src="E:\Practice\LoginPage\Js\RegisterUser.js"></script>
+</body>
