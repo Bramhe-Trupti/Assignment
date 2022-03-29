@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="E:\Practice\LoginPage\Styles\HomeStyle.css">
+    <link rel="stylesheet" type="text/css" href="/Styles/Home.css">
 </head>
-<body>
+<body onload="CheckCookie()">
     <nav class="navbar">
         <h1 class="logo">ADVENTURE</h1>
         <ul class="nav-links">
@@ -15,7 +15,7 @@
                 <div class="dropdown">
                     <ul>
                         <li><a href="#">MyProfile</a></li>
-                        <li><a href="Index.html">Logout</a></li>
+                        <li><a href="#" onclick="Logout()">Logout</a></li>
                     </ul>
                 </div>
             </li>
@@ -29,5 +29,5 @@
             <a href="#" class="btn">Learn More</a>
         </div>
     </header>
-    <script src="E:\Practice\LoginPage\Js\LogoutPage.js"></script>
+    <script type="text/javascript" src="/Js/Home.Js"></script>
 </body>

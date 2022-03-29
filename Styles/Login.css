@@ -19,10 +19,10 @@ body{
     row-gap: 20px;
     color: silver;
 }
-small{
-    visibility: hidden;
+span{
     color: red;
-    margin-left: 50px;
+    margin-left: 40px;
+    font-size: 15px;
 }
 .hearder{
     order: 1;
@@ -42,7 +42,7 @@ small{
     order:4;
     display: block;
     height: 50px;
-    width: 130px;
+    width: 150px;
     background-color: rgb(58, 3, 95);
     box-shadow: 3px 3px 3px rgb(197, 139, 245,0.5);
     border: none;
@@ -51,7 +51,7 @@ small{
     font-size: large;
     font-weight: bold;
 }
-.LoginPage input{
+.LoginPage input[type="text"] , input[type="password"]{
     display: block;
     height: 40px;
     width: 200px;
@@ -66,40 +66,4 @@ small{
     color: rgb(192, 100, 245);
 }
 
-/* The message box is shown when the user clicks on the password field 
-#message {
-    height: 60px;
-    width: 250px;
-    display:none;
-    background: #f1f1f1;
-    color: rgb(199, 70, 156);
-    padding: 20px;
-    margin-top: 10px;
-  }
-  
-#message p {
-    padding: 10px 35px;
-    font-size: 18px;
-}
-  
-  /* Add a green text color and a checkmark when the requirements are right 
-#valid {
-    color: green;
-}
-#valid:before {
-    position: relative;
-    left: -35px;
-    content: "✔";
-}
 
-  /* Add a red text color and an "x" when the requirements are wrong 
-#invalid {
-    color: red;
-}
-  
-#invalid:before {
-    position: relative;
-    left: -35px;
-    content: "✖";
-}
-*/

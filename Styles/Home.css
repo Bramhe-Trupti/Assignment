@@ -70,7 +70,6 @@ header{
     background: url("assets/Himalayas-Kanchenjunga.jpg");
     background-position: bottom;
     background-size: cover;
-
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -103,9 +102,41 @@ header{
 
 }
 
-/*@media screen and (max-width:600px){
-    .navbar{
-        bacgroud-color:Pink;
+/*@media screen and (min-width:600px){
+    body{
+       
     }
-}*/
+    .navbar{
+        position: absolute;
+        height:100px;
+        display: block;
+        padding: 10px;
+        color: whitesmoke;
+    }
+    .nav-links{
+        padding-left: 100px;
+        top:30px;
+        display: block;
+        height: 100px;
+        width: 100px;
+    }
+    .logo{
+        position: fixed;
+        font-size: 20px;
+    }
+    .nav-links :hover .nav-links li{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    
+    header{
+        background-image: url("assets/Himalayas-Kanchenjunga.jpg");
+        background-position: bottom;
+        height: 650px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}*/ 
     

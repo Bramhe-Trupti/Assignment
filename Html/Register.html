@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="E:\Practice\LoginPage\Styles\RegisterUser.css">
+    <link rel="stylesheet" type="text/css" href="/Styles/RegisterUser.css">
 </head>
 <body>
     <div class="Register">
         <form name="RegForm" class="RegForms">
             <h2>Register User</h2>
             <div class="Name">
-                <input type="text" id="Name" placeholder="UserName" required>
+                <input type="text" id="UserName" placeholder="UserName" onchange="validateUserName()" >
                 <small id="errorName"></small>
             </div>
             <div class="Email">
-                <input type="email" id="Email" placeholder="abc@gmail.com" onchange="validateEmali()" multiple required>
+                <input type="email" id="Email" placeholder="abc@gmail.com" onchange="validateEmali()" multiple >
                 <small id="errorEmail"></small>
             </div>
             <div class="Password">
-                <input type="password" id="Password" placeholder="Password" onchange="CheckPW()" required>
+                <input type="password" id="Password" placeholder="Password" onchange="ValidatePW()" >
                 <small id="errorPw"></small>
             </div>
             <div class="ConPw">
-                <input type="password" name="ConPassword" id="ConPW" placeholder="Confirm Password" onchange="VerifyPw()" required >
+                <input type="password" name="ConPassword" id="ConPW" placeholder="Confirm Password" onchange="VerifyPw()" >
                 <small id="errorConPw"></small>
             </div>
-            
-            <input type="submit" name="Submit" id="SubmitBtn" onclick="Save()">
-            <div class="Login">Already have an account?<a href="index.html"> Sign In</a></div>
+            <input type="submit" name="Submit" id="SubmitBtn" onclick="Save(); return false;">
+            <div class="Login">Already have an account?<a href="/Html/Login.html"> Sign In</a></div>
         </form>
     </div>
-    <script src="E:\Practice\LoginPage\Js\RegisterUser.js"></script>
+    <script type="text/javascript" src="/Js/RegisterUser.js" lang="javascript"></script>
 </body>

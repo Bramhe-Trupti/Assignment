@@ -21,9 +21,9 @@ body{
     color:silver;
 }
 small{
-  
     color: red;
-    margin-left: 50px;
+    margin-left: 30px;
+    font-size: 15px;
 }
 .Name{
     order:1;
